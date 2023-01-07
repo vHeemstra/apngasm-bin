@@ -1,4 +1,4 @@
-// import fs from 'node:fs';
+import fs from 'node:fs';
 import path from 'node:path';
 // import process from 'node:process';
 import {fileURLToPath} from 'node:url';
@@ -10,7 +10,7 @@ import binCheck from 'bin-check';
 import compareSize from 'compare-size';
 import apngasm from '../index.js';
 
-// const pkg = JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url)));
+const pkg = JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url)));
 
 // TODO: make binary building
 // test('rebuild the apngasm binaries', async t => {
@@ -32,7 +32,7 @@ import apngasm from '../index.js';
 // });
 
 test('return path to binary and verify that it is working', async t => {
-	t.true(await binCheck(apngasm, []).then(() => true).catch(error => error.message.includes('APNG Assembler 2.91')));
+	t.true(await binCheck(apngasm, []).then(() => true).catch(error => error.message.includes(`APNG Assembler ${pkg.lib_version}`)));
 });
 
 test('assembles APNG from separate frame files', async t => {
