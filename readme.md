@@ -123,6 +123,9 @@ palette or colortype, use those switches to turn them off:
 /kc     : keep color type
 ```
 
+## Related
+* [**apngdis-bin**](https://github.com/vHeemstra/apngdis-bin/) - Bin wrapper for APNG Disassembler
+
 ## Credits
 
 * [APNG Assembler](https://sourceforge.net/p/apngasm/) by [Max Stepin](https://github.com/maxstepin)

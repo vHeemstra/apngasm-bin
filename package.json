@@ -1,6 +1,6 @@
 {
   "name": "apngasm-bin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "lib_version": "2.91",
   "description": "apngasm bin-wrapper that makes it seamlessly available as a local dependency",
   "license": "MIT",
