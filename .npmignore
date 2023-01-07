@@ -1,0 +1,6 @@
+vendor/apngasm*
+.github
+test
+.editorconfig
+.gitattributes
+xo.config.cjs

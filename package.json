@@ -1,6 +1,6 @@
 {
   "name": "apngasm-bin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "lib_version": "2.91",
   "description": "apngasm bin-wrapper that makes it seamlessly available as a local dependency",
   "license": "MIT",
@@ -41,14 +41,6 @@
     "postinstall": "node lib/install.js",
     "test": "xo && ava --timeout=180s"
   },
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "cli.js",
-    "lib",
-    "test",
-    "vendor"
-  ],
   "keywords": [
     "apngasm",
     "assemble",
