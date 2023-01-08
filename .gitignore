@@ -1,2 +1,5 @@
 node_modules
 vendor/apngasm*
+vendor/source/**
+!vendor/source/*.txt
+!vendor/source/*.tar.gz
